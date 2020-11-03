@@ -11,7 +11,12 @@
 
 | Describe:  | Input | Output |
 | :-----------------------------------| :------------- | :------------- |
-|
+| Ticket() | | |
+| Construct an object containing movie name, viewing time and the age of the viewer. | myTicket(movieName: "Tenet", movieTime: "5:30", atendeeAge: 31) | myTicket {"Tenet", "5:30", "31"} |
+| Price | | |
+| Construct an object that adds ticket to a list. | myTicketList(myTicket) | myTicketList = [myTicket] |
+| create a method that adds a specific ID to each ticket. | myTicketList(myTicket) | myTicketId = [0] |
+| create a method that categorizes specific tickets to a certain price value. | 
 
 
 
