@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
@@ -7,9 +7,42 @@
   <script src="js/scripts.js"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Grab Your Popcorn!</title>
 </head>
 <body>
-  
+  <h1 class="jumbotron">Movie Ticket Pricing:</h1>
+  <div class="container">
+    <div class="row">
+      <h2>Pick a Movie:</h2>
+      <select class="form-control" id="movie-title">
+        <option value=""></option>
+        <option value="Step Brothers">Step Brothers</option>
+        <option value="Tenet">Tenet</option>
+        <option value="Hereditary">Hereditary</option>
+        <option value="The Lost Boys">The Lost Boys</option>
+      </select>
+      <h2>Pick a Time:</h2>
+      <select id="movie-time" class="form-control">
+        <option value=""></option>
+        <option value="11">11:00 AM</option>
+        <option value="12">12:00 PM</option>
+        <option value="13">1:00 PM</option>
+        <option value="14">2:00 PM</option>
+        <option value="15">3:00 PM</option>
+        <option value="16">4:00 PM</option>
+        <option value="17">5:00 PM</option>
+        <option value="18">6:00 PM</option>
+        <option value="19">7:00 PM</option>
+        <option value="20">8:00 PM</option>
+      </select>
+      <form>
+        <h2>Enter your age:</h2>
+        <input type="number" id="age">
+      </form>
+      <div class="container">
+        <button class="btn btn-info" id="submit" type="submit">submit</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

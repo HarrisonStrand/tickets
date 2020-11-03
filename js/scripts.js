@@ -1,5 +1,5 @@
 //Ticket Price Logic
-let newTicketPrice = new TicketPrice;
+
 
 function TicketPrice() {
   this.tickets = [];
@@ -17,6 +17,11 @@ TicketPrice.prototype.assignId = function() {
 }
 
 //Ticket logic
+// let MovieName = new MovieName
+// function MovieName(newRelease, oldRelease) {
+//   this.newRelease = newRelease;
+//   this.oldRelease = oldRelease;
+// }
 function Ticket(movieName, movieTime, attendeeAge) {
   this.movieName = movieName;
   this.movieTime = movieTime;
@@ -29,3 +34,18 @@ function Ticket(movieName, movieTime, attendeeAge) {
 
 
 //UI Logic
+let newTicketPrice = new TicketPrice();
+$(document).ready(function(event) {
+  $("button#submit").click(function() {
+    let inputtedAge = $("input#age").val();   
+    let inputtedMovie = $("select#movie-title").val();
+    let inputtedTime = $("select#movie-time").val();
+    
+    let newTicket = new Ticket(inputtedMovie, inputtedTime, inputtedAge);
+    newTicketPrice.addTicket(newTicket);
+    console.log(newTicketPrice);
+    
+    
+    
+  });
+});
